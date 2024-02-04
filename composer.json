@@ -1,0 +1,47 @@
+{
+  "name": "bytic/signed-url",
+  "description": "Signed url for bytic framework",
+  "license": "MIT",
+  "type": "library",
+  "keywords": [],
+  "authors": [
+    {
+      "name": "Gabriel Solomon",
+      "email": "hello@gabrielsolomon.ro"
+    }
+  ],
+  "homepage": "https://github.com/bytic/signed-url",
+  "require": {
+    "php": "^7.4 || ^8.0",
+    "bytic/utility": "^1.0",
+    "bytic/package-base": "^1.0",
+    "spatie/url-signer": "^2.0"
+  },
+  "require-dev": {
+    "bytic/phpqatools": "^1.0"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Bytic\\SignedUrl\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Bytic\\Scheduler\\Tests\\": "tests/src",
+      "Bytic\\Scheduler\\Tests\\Fixtures\\": "tests/fixtures"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "captainhook/plugin-composer": true,
+      "ergebnis/composer-normalize": true,
+      "phpstan/extension-installer": true,
+      "ramsey/composer-repl": true,
+      "bytic/phpqatools": true,
+      "php-http/discovery": true
+    }
+  }
+}
