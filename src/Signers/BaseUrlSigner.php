@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ByTIC\SignedUrl\Signers;
+namespace Bytic\SignedUrl\Signers;
 
 use Spatie\UrlSigner\Sha256UrlSigner;
 

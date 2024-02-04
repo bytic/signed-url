@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ByTIC\SignedUrl\Utility;
+namespace Bytic\SignedUrl\Utility;
 
 use Bytic\SignedUrl\SignedUrlServiceProvider;
 use Exception;

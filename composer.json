@@ -18,7 +18,9 @@
     "spatie/url-signer": "^2.0"
   },
   "require-dev": {
-    "bytic/phpqatools": "^1.0"
+    "bytic/phpqatools": "^1.0",
+    "bytic/container": "^2.0",
+    "bytic/config": "^1.0||^2.0"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -29,8 +31,8 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Bytic\\Scheduler\\Tests\\": "tests/src",
-      "Bytic\\Scheduler\\Tests\\Fixtures\\": "tests/fixtures"
+      "Bytic\\SignedUrl\\Tests\\": "tests/src",
+      "Bytic\\SignedUrl\\Tests\\Fixtures\\": "tests/fixtures"
     }
   },
   "config": {

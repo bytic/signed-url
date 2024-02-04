@@ -1,6 +1,8 @@
 <?php
 
-use ByTIC\SignedUrl\Utility\PackageConfig;
+require dirname(__DIR__) . '/vendor/autoload.php';
+
+use Bytic\SignedUrl\Utility\PackageConfig;
 use Nip\Container\Container;
 
 define('PROJECT_BASE_PATH', __DIR__ . '/..');
@@ -15,4 +17,3 @@ $data = [
 ];
 $container->set('config', new \Nip\Config\Config($data));
 
-require dirname(__DIR__) . '/vendor/autoload.php';
