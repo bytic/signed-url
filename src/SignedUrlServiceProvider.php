@@ -2,9 +2,9 @@
 
 namespace Bytic\SignedUrl;
 
-use ByTIC\SignedUrl\Signers\BaseUrlSigner;
-use ByTIC\SignedUrl\Utility\PackageConfig;
-use ByTIC\PackageBase\BaseBootableServiceProvider;
+use Bytic\SignedUrl\Signers\BaseUrlSigner;
+use Bytic\SignedUrl\Utility\PackageConfig;
+use Bytic\PackageBase\BaseBootableServiceProvider;
 
 /**
  * Class AuditServiceProvider
