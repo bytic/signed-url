@@ -12,7 +12,7 @@
   ],
   "homepage": "https://github.com/bytic/signed-url",
   "require": {
-    "php": "^7.4 || ^8.0",
+    "php": "^8.0",
     "bytic/utility": "^1.0",
     "bytic/package-base": "^1.0",
     "spatie/url-signer": "^2.0"

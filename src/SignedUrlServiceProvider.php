@@ -27,9 +27,9 @@ class SignedUrlServiceProvider extends BaseBootableServiceProvider
     protected function registerSigner()
     {
         $this->getContainer()->share(self::SIGNER, function () {
-            $signatureKey = PackageConfig::instance()->get('signature_key');
-            $expiresParameterName = PackageConfig::instance()->get('expires_parameter_name');
-            $signatureParameterName = PackageConfig::instance()->get('signature_parameter_name');
+            $signatureKey = PackageConfig::signatureKey();
+            $expiresParameterName = PackageConfig::expiresParameterName();
+            $signatureParameterName = PackageConfig::signatureParameterName();
             $signer = new BaseUrlSigner(
                 $signatureKey,
                 $expiresParameterName,

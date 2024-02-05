@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Bytic\SignedUrl\Utility;
 
 use Bytic\SignedUrl\SignedUrlServiceProvider;
+use DateTimeInterface;
 use Exception;
 
 /**
@@ -29,9 +30,9 @@ class PackageConfig extends \ByTIC\PackageBase\Utility\PackageConfig
         return (string)static::instance()->get('signature_key');
     }
 
-    public static function defaultExpiration(): bool
+    public static function defaultExpiration(): int|DateTimeInterface
     {
-        return static::instance()->get('default_expiration_time_in_seconds', false);
+        return static::instance()->get('default_expiration_time_in_seconds', 3600);
     }
 
     public static function expiresParameterName(): string
